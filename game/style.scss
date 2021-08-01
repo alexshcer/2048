@@ -6,7 +6,7 @@ $grid-max-width: 500px;
 $grid-padding: 8px;
 $grid-border-radius: 5px;
 // white
-$color-background: #f2efea;
+$color-background: #6a759b;
 $color-accent1: #f9d49a;
 $color-accent2: #d4a8cf;
 $color-list: #00d0a4, #dd7373, #7d53de, #6622cc, #00bfb2, #c06ff2, #340068, #3e92cc, #d8315b, #1c0b19, #1c0b19;
@@ -38,10 +38,9 @@ html {
 	font-family: "Rubik", sans-serif;
 	line-height: 1.5em;
 	color: #fff;
-	background: #162233;
+	background: #1e2641;
 }
-body {
-}
+
 .wrapper {
 	max-width: $grid-max-width;
 	margin: 0 auto;
@@ -49,48 +48,21 @@ body {
 	margin-top: 100px;
 }
 
-h2 {
-	font-style: italic;
-}
-
 /* Introduction */
-
-.intro {
-	margin-bottom: 60px;
-	&_title {
-		text-align: center;
-		color: $color-accent1;
-		font-size: 3rem;
-	}
-}
 
 /**/
 
 /* Guide instructions */
 
-.guide {
-	border-bottom: 1px solid grey;
-	&:first-of-type {
-		margin-top: 4rem;
-		border-top: 1px solid gray;
-	}
-	&_arrow {
-		display: inline-block;
-		margin: 15px;
-		font-size: 3rem;
-		color: #fff;
-	}
-}
-
 .controls {
 	&_game,
 	&_score {
 		display: inline-block;
-		width: 50%;
-		float: left;
-		@media all and (max-width: 767px) {
-			width: 100%;
-		}
+		width: 100px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		color: #fff;
 	}
 	&_game-btn {
 		margin-bottom: 1rem;
@@ -110,9 +82,8 @@ h2 {
 		min-width: 4em;
 		margin-bottom: 4rem;
 		padding: 0.5em 0.75em;
-		background: #0000003b;
 		text-align: center;
-		background: linear-gradient(90deg, #f9d49a, #d4a8cf);
+		background-color: #6a759b;
 
 		&-label,
 		&-text {
@@ -120,9 +91,9 @@ h2 {
 		}
 		&-label {
 			color: initial;
+			color: #fff;
 		}
 		&-text {
-			color: #4a3647;
 			font-size: 2rem;
 		}
 	}
@@ -171,12 +142,11 @@ h2 {
 	left: 0;
 	margin: auto;
 	&_cell {
-		display: inline-block;
 		height: 25%;
 		width: 25%;
 		padding: $grid-padding;
 		float: left;
-		background: rgba(238, 228, 218, 0.35);
+		background: #6a759b;
 		background-clip: content-box;
 	}
 }
