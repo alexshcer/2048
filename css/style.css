@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.landing {
+  color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(104.77deg, #ffffff 0%, #f18f88 0.01%, #1870ed 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing .title {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.landing .title .box {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background: linear-gradient(113.35deg, #1870ed 0%, #333399 100%);
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+.landing .title .box span {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.landing .title .box:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.landing .title .box:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.landing .title .box:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.landing .title .box:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.landing .playbtn {
+  background: linear-gradient(113.35deg, #1870ed 0%, #333399 100%);
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-top: 100px;
+  width: 40%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.landing .playbtn span {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.landing .playbtn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=style.css.map */

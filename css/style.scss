@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	// border: 1px solid black;
+}
+body {
+	font-family: "Poppins", sans-serif;
+}
+.landing {
+	color: #ffffff;
+	height: 100vh;
+	overflow: hidden;
+	background: linear-gradient(104.77deg, #ffffff 0%, #f18f88 0.01%, #1870ed 100%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.title {
+		width: 40%;
+		display: flex;
+		justify-content: space-between;
+		.box {
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			background: linear-gradient(113.35deg, #1870ed 0%, #333399 100%);
+			box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+			border-radius: 10px;
+			text-align: center;
+			display: inline-block;
+
+			span {
+				font-size: 80px;
+				font-weight: bold;
+			}
+		}
+		@for $i from 1 through 4 {
+			.box:nth-child(#{$i}) {
+				animation-delay: $i * 0.1s;
+			}
+		}
+	}
+	.playbtn {
+		background: linear-gradient(113.35deg, #1870ed 0%, #333399 100%);
+		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+		border-radius: 20px;
+		margin-top: 100px;
+		width: 40%;
+		height: 100px;
+		line-height: 100px;
+		text-align: center;
+		transition: all 0.1s ease-in-out;
+		cursor: pointer;
+		animation-delay: 0.5s;
+		span {
+			font-size: 48px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+	.playbtn:hover {
+		transform: scale(1.1);
+	}
+}
